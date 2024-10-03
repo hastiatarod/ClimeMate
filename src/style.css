@@ -25,3 +25,23 @@ body {
   border-radius: 5px;
   margin-left: 8px;
 }
+.city-detail-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #f9f7fe;
+}
+.city-name {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.date-weather {
+  color: rgba(39, 33, 66, 0.4);
+  font-weight: 400;
+}
+strong {
+  color: #f65282;
+  font-weight: 700;
+}
