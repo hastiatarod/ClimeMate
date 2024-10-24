@@ -39,7 +39,8 @@ body {
 }
 .date-weather {
   color: rgba(39, 33, 66, 0.4);
-  font-weight: 400;
+  font-weight: 450;
+  line-height: 1.5;
 }
 strong {
   color: #f65282;
@@ -49,9 +50,9 @@ strong {
   display: flex;
 }
 .temperature-emoji {
-  font-size: 35px;
+  width: 80px;
+  height: 80px;
   margin-right: 15px;
-  margin-top: 22px;
 }
 .temperature-degree {
   font-size: 80px;
