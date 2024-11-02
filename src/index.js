@@ -17,6 +17,25 @@ function refreshWeather(response) {
   timeElement.innerHTML = formatDate(date);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" />`;
 }
+
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml += `<div>
+  <div class="forecast-day">${day}</div>
+  <div class="forecast-icon">❄</div>
+  <div class="forecast-temperature">
+  <div class="forecast-temperature-high">16°</div>
+  <div class="forecast-temperature-low">12°</div>
+  </div>
+  </div>`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
 function formatDate(date) {
   let hours = date.getHours();
   let minutes = date.getMinutes();
@@ -53,3 +72,4 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("tehran");
+displayForecast();

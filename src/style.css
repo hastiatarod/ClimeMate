@@ -67,7 +67,7 @@ strong {
 .forecast {
   margin-top: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .forecast-day {
   text-align: center;
